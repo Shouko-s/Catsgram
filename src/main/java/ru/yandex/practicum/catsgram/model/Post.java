@@ -4,10 +4,8 @@ import lombok.*;
 
 import java.time.Instant;
 
-@Getter
-@Setter
-@EqualsAndHashCode(of = { "id" })
-@ToString
+@Data
+@EqualsAndHashCode(of = {"id"})
 public class Post {
     private Long id;
     private long authorId;
